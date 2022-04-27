@@ -103,6 +103,9 @@ section article h1{
     font-size: 3.5rem;
     margin-bottom: 30px;
 }
+section article h1 span{
+    display: block;
+}
 section article p{
     font-size: 15px;
     color: gray;
@@ -125,10 +128,58 @@ section article button:hover{
     border: 1px solid gray;
     cursor: pointer;
 }
-section article h1 span{
-    display: block;
-}
 section aside{
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        justify-content: space-between;
+    }
+    nav{
+        display: none;
+    }
+    .marg{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 0;
+    }
+    section article{
+       margin-top: 10px;
+       text-align: center;
+    }
+    section article h1{
+        margin-bottom: 10px;
+    }
+    section article h1 span{
+        display: inline;
+    }
+    section article p{
+        font-size: 18px;
+        max-width: 100%;
+    }
+    section article button{
+        font-size: 17px;
+    }
+    section aside{
+        margin-top: 0px;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-end;
+        border: 1px solid black;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
