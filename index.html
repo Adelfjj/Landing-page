@@ -9,7 +9,12 @@
 <body>
     <header class="marg">
         <h2>snap</h2>
-        <nav>
+        <div class="menu-mobile" onclick="actionMenu(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </div>
+        <nav id="n">
             <ul>
                 <li class="drop">
                     <a class="dropdown" href="#">Features </a>
@@ -28,12 +33,12 @@
                         <a href="#">Blog</a>
                     </div>
                 </li>
-                <li><a href="http://">Careers</a></li>
-                <li><a href="http://">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
             </ul>
             <ul class="user">
-                <li><a href="http://">Login</a></li>
-                <li><a href="http://">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
             </ul>
         </nav>
         
@@ -51,5 +56,10 @@
             </aside>
         </section>
     </main>
+    <script>
+        function actionMenu(x){
+            x.classList.toggle("change");
+        }
+    </script>
 </body>
 </html>
