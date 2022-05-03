@@ -8,7 +8,6 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1200px;
-    position: relative;
 }
 .marg{
     margin-left: 95px;
@@ -158,6 +157,49 @@ section aside{
 }
 .change .bar3 {
     transform: rotate(45deg) translate(-7px, -7px);
+}
+.drop-login{
+    position: absolute;
+    margin-top: 15px;
+    right: 10px;
+    padding: 30px 20px 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px 0px 5px 5px;
+    display: none;
+}
+.drop-login form{
+    display: flex;
+    flex-direction: column;
+}
+.drop-login form input{
+   margin-bottom: 15px;
+   padding: 3px;
+   outline: none;
+}
+.drop-login form input:focus{
+    color: black;
+}
+.drop-login form button:hover{
+    border-color: black;
+    color: black;
+}
+.drop-login form input, a, button{
+    color: gray;
+}
+.drop-login form a{
+    font-size: 12px;
+    padding: 0px;
+    margin: 20px 0px;
+    text-align: center;
+}
+.drop-login form button{
+    border-radius: 5px;
+    border: 2px solid gray;
+    background: white;
+    color: gray;
+    padding: 5px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
