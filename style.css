@@ -269,6 +269,7 @@ section aside{
     }
     nav ul li{
         margin-bottom: 12px;
+        margin-right: 0;
     }
     
     nav ul li a{
@@ -315,6 +316,20 @@ section aside{
    .slide{
        min-width: 230px;
        width: 30%;
+    }
+    .user .drop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .drop-login{
+        position: relative;
+        margin-top: 5px;
+        right: auto;
+        padding: 5px 20px;
+        background: white;
+        box-shadow: none;
+        display: none;
     }
 }
 
